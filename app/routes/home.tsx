@@ -16,12 +16,18 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="max-w-4xl mx-auto px-4">
-        <Hero />
-        <About />
-        <Experience />
-        <Skills />
-      </main>
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="flex flex-col lg:flex-row gap-16 lg:gap-32">
+          <div className="lg:w-[45%] lg:h-full lg:sticky lg:top-40 flex flex-col gap-8 lg:gap-16">
+            <Hero />
+          </div>
+          <main className="lg:w-[55%] flex flex-col gap-20 lg:py-28">
+            <About />
+            <Experience />
+            <Skills />
+          </main>
+        </div>
+      </div>
     </>
   );
 }
