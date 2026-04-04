@@ -2,7 +2,7 @@ import { skills } from "../data/skills";
 
 export function Skills() {
   return (
-    <section id="skills" className=" scroll-mt-42">
+    <section id="skills" className=" scroll-mt-18 lg:scroll-mt-42">
       <h2 className="text-4xl font-bold mb-12">Skills</h2>
 
       <div className="space-y-4 max-w-3xl group/skills">
