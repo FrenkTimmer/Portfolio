@@ -1,3 +1,12 @@
+import {
+  IconBrandGithub as GithubIcon,
+  IconBrandGithubFilled as GithubFilledIcon,
+  IconMail as MailIcon,
+  IconMailFilled as MailFilledIcon,
+  IconBrandLinkedin as LinkedinIcon,
+  IconBrandLinkedinFilled as LinkedinFilledIcon,
+} from "@tabler/icons-react";
+
 export function Hero() {
   return (
     <section id="hero" className="flex flex-col pt-20 lg:pt-0">
@@ -12,14 +21,25 @@ export function Hero() {
       <div className="flex gap-4">
         <a
           href="https://www.linkedin.com/in/frenktimmer/"
-          className="hover:underline"
+          className="group"
           target="_blank"
           rel="noopener noreferrer"
         >
-          LinkedIn
+          <LinkedinIcon className="group-hover:hidden" />
+          <LinkedinFilledIcon className="hidden group-hover:block" />
         </a>
-        <a href="mailto:frenk-timmer@proton.me" className="hover:underline">
-          Email
+        <a href="mailto:frenk-timmer@proton.me" className="group">
+          <MailIcon className="group-hover:hidden" />
+          <MailFilledIcon className="hidden group-hover:block" />
+        </a>
+        <a
+          href="https://github.com/FrenkTimmer/"
+          className="group"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GithubIcon className="group-hover:hidden" />
+          <GithubFilledIcon className="hidden group-hover:block" />
         </a>
       </div>
     </section>
