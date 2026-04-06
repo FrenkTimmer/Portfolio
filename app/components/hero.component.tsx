@@ -10,7 +10,7 @@ import {
 export function Hero() {
   return (
     <section id="hero" className="flex flex-col pt-20 lg:pt-0">
-      <h1 className="text-5xl font-bold mb-2">Frenk Timmer</h1>
+      <h1 className="text-4xl lg:text-5xl font-bold mb-2">Frenk Timmer</h1>
       <h2 className="text-xl text-gray-400 mb-4">
         XR Engineer & Unity Developer
       </h2>
@@ -26,11 +26,11 @@ export function Hero() {
           rel="noopener noreferrer"
         >
           <LinkedinIcon className="group-hover:hidden" />
-          <LinkedinFilledIcon className="hidden group-hover:block" />
+          <LinkedinFilledIcon className="hidden group-hover:block group-hover:fill-blue-300" />
         </a>
         <a href="mailto:frenk-timmer@proton.me" className="group">
           <MailIcon className="group-hover:hidden" />
-          <MailFilledIcon className="hidden group-hover:block" />
+          <MailFilledIcon className="hidden group-hover:block group-hover:fill-blue-300" />
         </a>
         <a
           href="https://github.com/FrenkTimmer/"
@@ -39,7 +39,7 @@ export function Hero() {
           rel="noopener noreferrer"
         >
           <GithubIcon className="group-hover:hidden" />
-          <GithubFilledIcon className="hidden group-hover:block" />
+          <GithubFilledIcon className="hidden group-hover:block group-hover:fill-blue-300" />
         </a>
       </div>
     </section>

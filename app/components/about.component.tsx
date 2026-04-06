@@ -2,7 +2,7 @@ export function About() {
   return (
     <section id="about" className="scroll-mt-18 lg:scroll-mt-42">
       <h2 className="text-4xl font-bold mb-8">About</h2>
-      <div className="max-w-3xl space-y-4 text-gray-400">
+      <div className="max-w-5xl space-y-4 text-gray-400">
         <p>
           I’m a software engineer specializing in XR (VR, AR, and MR) with over
           six years of experience building immersive, interactive applications
