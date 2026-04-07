@@ -5,20 +5,20 @@ import {
   IconMailFilled as MailFilledIcon,
   IconBrandLinkedin as LinkedinIcon,
   IconBrandLinkedinFilled as LinkedinFilledIcon,
+  IconFileCvFilled as ResumeFilledIcon,
+  IconFileCv as ResumeIcon,
 } from "@tabler/icons-react";
 
 export function Hero() {
   return (
     <section id="hero" className="flex flex-col pt-20 lg:pt-0">
       <h1 className="text-4xl lg:text-5xl font-bold mb-2">Frenk Timmer</h1>
-      <h2 className="text-xl text-gray-400 mb-4">
-        XR Engineer & Unity Developer
-      </h2>
+      <h2 className="text-xl text-gray-400 mb-4">Software Engineer</h2>
       <p className="text-base text-gray-400 max-w-2xl mb-8">
-        Unity Developer with over six years of experience creating immersive
-        XR/VR applications.
+        I build immersive, interactive applications across multiple platforms
       </p>
-      <div className="flex gap-4">
+
+      <div className="flex gap-4 mb-6">
         <a
           href="https://www.linkedin.com/in/frenktimmer/"
           className="group"
@@ -40,6 +40,15 @@ export function Hero() {
         >
           <GithubIcon className="group-hover:hidden" />
           <GithubFilledIcon className="hidden group-hover:block group-hover:fill-blue-300" />
+        </a>
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group"
+        >
+          <ResumeIcon className="group-hover:hidden" />
+          <ResumeFilledIcon className="hidden group-hover:block group-hover:fill-blue-300" />
         </a>
       </div>
     </section>

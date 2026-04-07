@@ -16,7 +16,7 @@ export const experiences: ExperienceItem[] = [
     url: "https://www.cornerstoneondemand.com/platform/immersive-learning/",
     period: "May 2023 — Dec 2025",
     description:
-      "At Cornerstone On Demand, I contributed to the development of a cross-platform B2C application supporting both web and VR, working primarily in Unity and C#. I collaborated on features for both environments, integrated external plugins, and developed API endpoints to manage content and user data efficiently. I also contributed to a custom JavaScript implementation for lipsync on the web and explored R&D projects using React Three Fiber and WebGPU. A key focus of my work was performance optimization, including CPU and memory profiling, asset optimization for VR, and maintaining CI/CD pipelines through Jenkins. Additionally, I implemented AI integrations such as GPT API, text-to-speech, and speech-to-text to support realistic virtual interactions, and I developed Unity Editor tools to automate asset workflows and improve team efficiency.",
+      "Contributed to a cross-platform B2C application using Unity and C#. Built features across both environments, integrated external plugins, and developed APIs for content and user management. Worked on WebGL lipsync, R&D projects with React Three Fiber/WebGPU, and AI integrations (GPT, TTS, STT). Focused on performance optimization, VR asset efficiency, and CI/CD pipelines (Jenkins), while creating Unity Editor tools to streamline workflows.",
     skills: [
       "Unity3D",
       "C#",
@@ -38,7 +38,7 @@ export const experiences: ExperienceItem[] = [
     url: "https://layersxr.com/",
     period: "2019 — 2023",
     description:
-      "At Layers, I developed B2B XR applications for multiple MR and VR platforms, including HoloLens and Unreal Glasses, handling both application logic and UI development. I worked on interactive features, shaders, and internal tools to support development and deployment. I also created AR filters for social platforms like Snapchat and Instagram. My responsibilities included mentoring interns and supporting product demonstrations at events. A strong emphasis in my work was on performance optimization, ensuring smooth experiences across platforms, and building reusable Unity packages to improve workflow efficiency.",
+      "Developed B2B XR applications for MR and VR platforms using Unity, handling both application logic and UI. Built interactive features, shaders, and internal tools, and created AR filters for Snapchat and Instagram. Focused on performance optimization, reusable Unity packages, and supported demos and mentoring.",
     skills: [
       "Unity3D",
       "C#",
@@ -57,7 +57,7 @@ export const experiences: ExperienceItem[] = [
     url: "",
     period: "2016 — 2021",
     description:
-      "In my Manager role at Domino's, I trained and mentored employees to maximize team performance. I managed complaints with calm, clear communication and collaborated with team members to achieve target results. My responsibilities included setting goals, delegating tasks, providing feedback, and addressing performance issues.",
+      "In my Manager role at Domino's, I trained and mentosky employees to maximize team performance. I managed complaints with calm, clear communication and collaborated with team members to achieve target results. My responsibilities included setting goals, delegating tasks, providing feedback, and addressing performance issues.",
     skills: [
       "Team Management",
       "Training & Mentoring",

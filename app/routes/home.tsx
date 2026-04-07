@@ -3,11 +3,11 @@ import { Header, Hero, About, Experience, Skills } from "../components";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Frenk Timmer | XR Engineer & Unity Developer" },
+    { title: "Frenk Timmer | Software Engineer" },
     {
       name: "description",
       content:
-        "XR Engineer with 6+ years experience in Unity3D, VR/AR/MR development, AI integrations, and performance optimization.",
+        "Software Engineer with 6+ years experience building scalable, interactive applications.",
     },
   ];
 }

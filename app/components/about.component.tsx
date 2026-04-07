@@ -4,11 +4,11 @@ export function About() {
       <h2 className="text-4xl font-bold mb-8">About</h2>
       <div className="max-w-5xl space-y-4 text-gray-400">
         <p>
-          I’m a software engineer specializing in XR (VR, AR, and MR) with over
-          six years of experience building immersive, interactive applications
-          across platforms. My work sits at the intersection of real-time 3D
-          development, AI integration, and scalable system design—primarily
-          using Unity, C#, and modern web technologies.
+          I am a software engineer with over six years of experience in XR (VR,
+          AR, and MR) development. I specialize in building immersive,
+          interactive applications across multiple platforms using Unity, C#,
+          and modern web technologies. I possess strong problem-solving skills
+          and the ability to work collaboratively in a team environment.
         </p>
 
         <p>

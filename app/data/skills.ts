@@ -7,13 +7,14 @@ const skillLevels = {
 };
 
 export const skills = [
-  { name: "Unity (C#)", level: skillLevels.Expert },
+  { name: "Unity", level: skillLevels.Expert },
+  { name: "C#", level: skillLevels.Expert },
   { name: "XR / VR / MR Development", level: skillLevels.Expert },
   {
     name: "Performance Optimization",
     level: skillLevels.Experienced,
   },
-  { name: "AI Integrations (GPT, TTS, STT)", level: skillLevels.Experienced },
+  { name: "AI Integrations", level: skillLevels.Experienced },
   { name: "API Development & Integration", level: skillLevels.Intermediate },
   { name: "Unity Editor Tooling", level: skillLevels.Experienced },
   { name: "JavaScript", level: skillLevels.Intermediate },
@@ -22,10 +23,9 @@ export const skills = [
   { name: "Shader Programming", level: skillLevels.Intermediate },
   { name: "Unreal Engine 5", level: skillLevels.Beginner },
   {
-    name: "CI/CD (Jenkins), Git",
+    name: "CI/CD & DevOps",
     level: skillLevels.Experienced,
   },
-  { name: "AR Filters (Snapchat, Instagram)", level: skillLevels.Experienced },
+  { name: "SparkAR / Lens Studio", level: skillLevels.Experienced },
   { name: "Agile / Scrum", level: skillLevels.Experienced },
-  { name: "Technical Communication", level: skillLevels.Experienced },
 ];
