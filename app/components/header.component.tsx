@@ -1,14 +1,11 @@
-import { useRef } from "react";
-import { IconMenu2 as MenuIcon } from "@tabler/icons-react";
+import { useState, useRef, useEffect } from "react";
+import { Hamburger } from "./hamburger.component";
 
 export function Header() {
-  const toggleRef = useRef<HTMLInputElement>(null);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
 
-  const closeMenu = () => {
-    if (toggleRef.current) {
-      toggleRef.current.checked = false;
-    }
-  };
+  const closeMenu = () => setMenuOpen(false);
 
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
@@ -23,6 +20,20 @@ export function Header() {
     closeMenu();
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (menuOpen) {
+        closeMenu();
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [menuOpen]);
+
   const navItems = [
     { label: "Home", action: scrollToTop },
     { label: "About", action: () => scrollToSection("about") },
@@ -30,46 +41,52 @@ export function Header() {
     { label: "Skills", action: () => scrollToSection("skills") },
   ];
 
+  const [menuHeight, setMenuHeight] = useState("0px");
+
+  useEffect(() => {
+    if (menuRef.current) {
+      setMenuHeight(menuOpen ? `${menuRef.current.scrollHeight}px` : "0px");
+    }
+  }, [menuOpen]);
+
   return (
     <header className="sticky top-0 bg-white dark:bg-gray-900 shadow-sm z-50">
       <div className="relative">
-        <input
-          ref={toggleRef}
-          id="menu-toggle"
-          type="checkbox"
-          className="hidden peer"
-        />
-        <nav className="max-w-6xl mx-auto flex items-center justify-between py-2">
+        <nav className="max-w-6xl mx-auto flex items-center justify-between py-2 px-4">
           <div className="hidden lg:flex">
             {navItems.map((item) => (
               <button
                 key={item.label}
                 onClick={item.action}
-                className="font-semibold px-4 py-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-950 transition"
+                className="font-semibold px-4 py-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-950 transition cursor-pointer"
               >
                 {item.label}
               </button>
             ))}
           </div>
-          <div className="lg:hidden flex justify-end w-full px-4">
-            <label
-              htmlFor="menu-toggle"
-              className="cursor-pointer p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-950"
-            >
-              <MenuIcon />
-            </label>
+          <div className="lg:hidden flex justify-end w-full">
+            <Hamburger
+              isOpen={menuOpen}
+              toggle={() => setMenuOpen(!menuOpen)}
+            />
           </div>
         </nav>
-        <div className="lg:hidden hidden peer-checked:flex lg:peer-checked:hidden flex-col gap-2 px-4 pb-4 bg-white dark:bg-gray-900 shadow-md">
-          {navItems.map((item) => (
-            <button
-              key={item.label}
-              onClick={item.action}
-              className="w-full text-left font-semibold px-4 py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-950 transition"
-            >
-              {item.label}
-            </button>
-          ))}
+        <div
+          ref={menuRef}
+          style={{ height: menuHeight }}
+          className={`lg:hidden absolute top-full left-0 w-full bg-white dark:bg-gray-900 shadow-md overflow-hidden transition-height duration-300 ease-in-out`}
+        >
+          <div className="flex flex-col gap-2 px-4 pb-4">
+            {navItems.map((item) => (
+              <button
+                key={item.label}
+                onClick={item.action}
+                className="w-full text-left font-semibold px-4 py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-950 transition cursor-pointer"
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </header>

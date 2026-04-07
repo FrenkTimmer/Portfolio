@@ -8,7 +8,7 @@ export function Experience() {
   return (
     <section
       id="experience"
-      className="scroll-mt-70 lg:scroll-mt-42 max-w-5xl mx-auto"
+      className="scroll-mt-18 lg:scroll-mt-42 max-w-5xl mx-auto"
     >
       <h2 className="text-4xl font-bold mb-12">Experience</h2>
 
