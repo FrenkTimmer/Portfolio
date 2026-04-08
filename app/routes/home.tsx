@@ -1,6 +1,5 @@
 import type { Route } from "./+types/home";
 import { Header, Hero, About, Experience, Skills } from "../components";
-import { Analytics } from "@vercel/analytics/react";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -29,7 +28,6 @@ export default function Home() {
           </main>
         </div>
       </div>
-      <Analytics />
     </>
   );
 }
