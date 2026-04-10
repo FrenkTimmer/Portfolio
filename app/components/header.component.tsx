@@ -38,6 +38,7 @@ export function Header() {
     { label: "Home", action: scrollToTop },
     { label: "About", action: () => scrollToSection("about") },
     { label: "Experience", action: () => scrollToSection("experience") },
+    { label: "Projects", action: () => scrollToSection("projects") },
     { label: "Skills", action: () => scrollToSection("skills") },
   ];
 
@@ -52,7 +53,7 @@ export function Header() {
   return (
     <header className="sticky top-0 bg-white dark:bg-gray-900 shadow-sm z-50">
       <div className="relative">
-        <nav className="max-w-6xl mx-auto flex items-center justify-between py-2">
+        <nav className="max-w-6xl mx-auto flex items-center justify-between py-2 px-4">
           <div className="hidden lg:flex">
             {navItems.map((item) => (
               <button
@@ -64,7 +65,7 @@ export function Header() {
               </button>
             ))}
           </div>
-          <div className="lg:hidden flex justify-end w-full px-4">
+          <div className="lg:hidden flex justify-end w-full">
             <Hamburger
               isOpen={menuOpen}
               toggle={() => setMenuOpen(!menuOpen)}

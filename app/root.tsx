@@ -34,8 +34,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <div className="fixed top-0 z-[-2] h-screen w-screen bg-white dark:bg-gray-950 dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,oklch(21%_0.034_264.665),rgba(255,255,255,0))]"></div>
-        {children}
+        <div className="fixed inset-0 dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,var(--color-gray-900),transparent)]"></div>
+        <div className="relative">{children}</div>
         <Analytics />
         <ScrollRestoration />
         <Scripts />

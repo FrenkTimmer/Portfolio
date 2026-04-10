@@ -15,7 +15,7 @@ export function Experience() {
       <ol className="flex flex-col gap-12 group/experiences">
         {experiences.map((job) => (
           <li key={job.company} className="relative group/experience">
-            <div className="absolute -inset-x-4 -inset-y-4 rounded-lg bg-gray-900 opacity-0 group-hover/experience:opacity-100 transition-opacity duration-200"></div>
+            <div className="absolute -inset-x-4 -inset-y-4 rounded-lg bg-gray-900 opacity-0 lg:group-hover/experience:opacity-100 transition-opacity duration-200"></div>
 
             <div className="relative max-w-5xl mx-auto">
               <div className="flex justify-between items-start mb-2">

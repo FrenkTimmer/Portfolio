@@ -15,7 +15,7 @@ export function Hero() {
       <h1 className="text-4xl lg:text-5xl font-bold mb-2">Frenk Timmer</h1>
       <h2 className="text-xl text-gray-400 mb-4">Software Engineer</h2>
       <p className="text-base text-gray-400 max-w-2xl mb-8">
-        I build immersive, interactive applications across multiple platforms
+        I build immersive, interactive applications across multiple platforms.
       </p>
 
       <div className="flex gap-4 mb-6">
