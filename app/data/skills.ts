@@ -17,7 +17,7 @@ export const skills = [
   { name: "AI Integrations", level: skillLevels.Experienced },
   { name: "API Development & Integration", level: skillLevels.Intermediate },
   { name: "Unity Editor Tooling", level: skillLevels.Experienced },
-  { name: "JavaScript", level: skillLevels.Intermediate },
+  { name: "JavaScript / TypeScript", level: skillLevels.Intermediate },
   { name: "React", level: skillLevels.Experienced },
   { name: "WebGPU / WebXR", level: skillLevels.Intermediate },
   { name: "Shader Programming", level: skillLevels.Intermediate },
