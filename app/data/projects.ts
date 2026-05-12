@@ -1,5 +1,21 @@
 export const projects = [
   {
+    title: "TCG Binder",
+    description:
+      "A digital trading card binder application, built for organizing and showcasing Pokémon card collections through customizable binder pages.",
+    image: "/images/tcg_binder.png",
+    url: "",
+    technologies: [
+      "React",
+      "TypeScript",
+      "React Router",
+      "Tailwind CSS",
+      "Vite",
+      "TCGDex API",
+      "Vercel",
+    ],
+  },
+  {
     title: "Portfolio Website",
     description:
       "Personal portfolio website, built with React and Tailwind, deployed on Vercel.",
