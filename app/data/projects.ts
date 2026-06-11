@@ -1,8 +1,8 @@
 export const projects = [
   {
-    title: "TCG Binder",
+    title: "pkmnpages",
     description:
-      "A digital trading card binder application, built for organizing and showcasing Pokémon card collections through customizable binder pages.",
+      "A digital Pokémon card binder app with cloud sync, card search, drag-and-drop pocket management, custom artwork placement, and shareable collections.",
     image: "/images/tcg_binder.png",
     url: "",
     technologies: [
@@ -10,8 +10,8 @@ export const projects = [
       "TypeScript",
       "React Router",
       "Tailwind CSS",
-      "Vite",
-      "TCGDex API",
+      "Supabase",
+      "TCGdex API",
       "Vercel",
     ],
   },
