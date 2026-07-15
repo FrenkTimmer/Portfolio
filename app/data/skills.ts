@@ -9,7 +9,7 @@ const skillLevels = {
 export const skills = [
   { name: "Unity", level: skillLevels.Expert },
   { name: "C#", level: skillLevels.Expert },
-  { name: "XR / VR / MR Development", level: skillLevels.Expert },
+  { name: "XR Development", level: skillLevels.Expert },
   {
     name: "Performance Optimization",
     level: skillLevels.Experienced,

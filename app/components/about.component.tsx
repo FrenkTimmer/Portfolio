@@ -6,9 +6,10 @@ export function About() {
         <p>
           I am a software engineer with over six years of experience in XR (VR,
           AR, and MR) development. I specialize in building immersive,
-          interactive applications across multiple platforms using Unity, C#,
-          and modern web technologies. I possess strong problem-solving skills
-          and the ability to work collaboratively in a team environment.
+          interactive applications across XR, mobile, and web platforms using
+          Unity, Unreal Engine, C#, and modern web technologies. I possess
+          strong problem-solving skills and the ability to work
+          collaboratively in a team environment.
         </p>
 
         <p>
@@ -34,8 +35,8 @@ export function About() {
         </p>
 
         <p>
-          Outside of development, you’ll usually find me gaming, powerlifting,
-          or tinkering with new tech.
+          In my spare time, you’ll usually find me building personal
+          projects, tinkering with new tech, powerlifting, or gaming.
         </p>
       </div>
     </section>
