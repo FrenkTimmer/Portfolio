@@ -36,7 +36,7 @@ export const projects = [
     image: "/images/more_missing_pieces.png",
     url: "https://thunderstore.io/c/valheim/p/Vismeneer/MoreMissingPieces/",
     technologies: ["C#", "Unity", "Blender", "GIMP", "BepInEx", "Game Modding"],
-    stats: [{ label: "10k+ downloads", icon: "download" }],
+    stats: [{ label: "15K+ downloads", icon: "download" }],
   },
   {
     title: "SilencePlease",
